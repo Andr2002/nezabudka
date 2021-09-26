@@ -1,2 +1,3 @@
 # Nezabudka
-created by ANDR
+This is a course project for my university.
+Flower shop website.
