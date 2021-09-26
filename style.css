@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #65b2c6 #c0cccc;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: local('Orchidea Pro Medium'), local('OrchideaPro-Medium'), url('Orchideapromedium.woff2') format('woff2'), url('Orchideapromedium.woff') format('woff'), url('Orchideapromedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE TheArtist Script';
+    src: local('MADE TheArtist Script'), local('MADETheArtistScript'), url('Madetheartistscript.woff2') format('woff2'), url('Madetheartistscript.woff') format('woff'), url('Madetheartistscript.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alexander';
+    src: local('Alexander'), url('alexander.woff2') format('woff2'), url('alexander.woff') format('woff'), url('alexander.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Orchidea Pro';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 160px;
+    margin: auto;
+}
+
+.logo,
+.location-logo,
+.clock-logo {
+    float: left;
+}
+
+.logo {
+    width: 129px;
+    height: 129px;
+}
+
+.address {
+    margin-top: 64px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: right;
+}
+
+.address span {
+    font-size: 17px;
+}
+
+.time {
+    margin-top: 71px;
+}
+
+.time span {
+    font-size: 17px;
+}
+
+.clock-logo {
+    margin-right: 10px;
+}
+
+.time span {
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.nav {
+    /* margin-top: 16px;
+    margin-right: 20px; */
+    margin: 16px 20px 0 0;
+    /* Поочередно устанавливается отступ от верхнего, правого, нижнего и левого края. */
+    vertical-align: center;
+}
+
+.nav-name-1 {
+    display: inline-block;
+    padding-top: 19px;
+    font-size: 36px;
+}
+
+hr {
+    margin: 8px 0;
+}
+
+.nav-name-2 {
+    display: block;
+    font-family: 'MADE TheArtist Script';
+    font-size: 32px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 65px;
+}
+
+.social-media img {
+    border-radius: 7px;
+}
+
+.link:not(:last-child) {
+    margin-right: 16px;
+}
+
+.busket-logo {
+    float: right;
+}
+
+.busket {
+    margin-top: 53px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.busket a:not(:last-child) {
+    text-decoration: none;
+    color: black;
+    margin-right: 9px;
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+.catalog {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #BAD5DC;
+}
+
+.catalog-item {
+    width: calc(100% / 5);
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.catalog-item:hover {
+    background-color: #65b2c6;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.catalog-item a:hover {
+    color: white;
+}
+
+.catalog-item:not(:last-child) {
+    border-right: black 2px solid;
+}
+
+.catalog-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.main {
+    max-width: 1300px;
+    margin: auto;
+    height: 900px;
+    background-image: url(img/main-bg.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.description-1 {
+    width: 733px;
+    height: 185px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 283px;
+    margin-top: 49px;
+}
+
+.description-1 span {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 9px;
+    margin-top: 14px;
+}
+
+.description-1 p {
+    display: block;
+    margin: 0 7px;
+    text-align: justify;
+    font-family: 'Alexander';
+    font-size: 20px;
+}
+
+.description-2 {
+    width: 613px;
+    height: 194px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 343px;
+    margin-top: 298px;
+}
+
+.description-2 span {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.description-2 ul {
+    display: block;
+    padding-left: 30px;
+    font-family: 'Alexander';
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.footer-hr {
+    margin: -30px auto 10px;
+    padding: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    width: 1300px;
+}
+
+footer {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* items */
+
+.catalog-main {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.catalog-name {
+    display: block;
+    text-align: center;
+    margin: 67px 0;
+    font-size: 36px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+.card-name {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card-img {
+    width: 300px;
+    height: 340px;
+    object-fit: contain;
+    margin-bottom: -26px;
+    /* картинка ебашится */
+}
+
+.card-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-hr {
+    margin-top: 3px;
+    padding: 0;
+}
+
+.price {
+    display: block;
+    font-size: 24px;
+    margin-left: 37px;
+    margin-top: 8px;
+}
+
+.buy-btn {
+    width: 136px;
+    height: 48px;
+    border: black 1px solid;
+    border-radius: 30px;
+    font-size: 22px;
+    background-color: #BAD5DC;
+    margin-bottom: 10px;
+    margin-right: 14px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    opacity: 1;
+    background-color: #65b2c6;
+    border: 1px black solid;
+    color: white;
+    transition: all .3s;
+}
+
+.buy-btn:active {
+    background-color: #BAD5DC;
+    border: 1px #000000 solid;
+    color: black;
+}
+
+
+/* МОДАЛЬНОЕ ОКНО */
+
+
+/* подложка */
+
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* окно */
+
+.modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+form {
+    display: block;
+    background: #5B3C67;
+    padding: 50px;
+    width: 100%;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+form input {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* margin-left: 40%; */
+    width: 50%;
+    height: 35px;
+    border: 1px solid #ff8c00;
+}
+
+.button {
+    width: 50%;
+    font-size: 14pt;
+    color: white;
+    background: #7F113E;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid #F5C4AB;
+}
+
+.button:hover {
+    border: 1px solid white;
+}
