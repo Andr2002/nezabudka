@@ -156,6 +156,11 @@ hr {
     transition: all .2s;
 }
 
+.catalog-item a {
+    display: block;
+    height: 100%;
+}
+
 .catalog-item a:hover {
     color: white;
 }
@@ -437,4 +442,34 @@ form input {
 
 .button:hover {
     border: 1px solid white;
+}
+
+@media (max-width:768px) {
+    .address,
+    .time,
+    .social-media,
+    .busket {
+        visibility: hidden;
+    }
+    .nav {
+        position: absolute;
+        left: 25%;
+    }
+    .nav-name-1 {
+        display: inline-block;
+    }
+    .nav-name-2 {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .catalog-item {
+        height: 70px;
+    }
+    body {
+        background-color: greenyellow;
+    }
+    .description-1 {
+        align-items: center;
+        justify-content: center;
+    }
 }
