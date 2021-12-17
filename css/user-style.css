@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #65b2c6 #c0cccc;
+}
+
+.user-logo {
+    display: block;
+    height: 135px;
+    width: 135px;
+    margin: auto;
+}
+
+.user-name {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 81px;
+}
+
+.information-desc {
+    margin-left: 425px;
+}
+
+.information-desc p {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+}
+
+.exit-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    left: 48%;
+}
+
+.exit-logo {
+    height: 50px;
+    width: 50px;
+    /* display: block;
+    margin: auto;
+    margin-bottom: 29px;
+    cursor: pointer;
+    color: #fff; */
+}
