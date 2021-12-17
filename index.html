@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Незабудка</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="objects.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="fonts/alexander.css">
     <link rel="stylesheet" href="fonts/madetheartistscript.css">
@@ -45,7 +43,7 @@
 
             <div class="busket">
                 <a href="#" class="busket-name" data-modal="1">КОРЗИНА</a>
-                <a href="#" data-modal="1"><img src="img/busket-logo.png" alt="busket-logo" class="busket-logo"></a>
+                <a href="user.html" data-modal="1"><img src="img/login.png" alt="login-logo" class="login-logo"></a>
             </div>
         </nav>
     </header>
@@ -87,41 +85,46 @@
                 <li>оформляя заказ, вы можете прикрепить к заявке фотографию желаемой композиции – мы постараемся в точности воспроизвести её.</li>
             </ul>
         </div>
+        <style>
+            .main {
+                max-width: 1300px;
+                margin: auto;
+                height: 900px;
+                background-image: url(img/main-bg.jpg);
+                background-repeat: no-repeat;
+                align-items: center;
+            }
+        </style>
     </div>
 
-
     <!-- МОДАЛЬНОЕ ОКНО -->
-
     <div class="modal" data-modal="1">
         <!--   Svg иконка для закрытия окна  -->
         <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-        <!-- <p class="modal__title">Раздел Корзины пока в разработке</p> -->
+        <p class="modal__title">Раздел Корзины пока в разработке</p>
 
-        <form class="" action="index.html" method="POST">
+        <!-- <form class="" action="index.html" method="POST">
             <input type="text" name="name" id="input-name" size="15" maxlength="20" value="" placeholder="Ваше имя" required><br>
             <input type="text" name="city" id="input-city" size="15" maxlength="20" value="" placeholder="Ваш город" required><br>
             <input type="text" name="number" id="input-number" size="15" maxlength="20" value="" placeholder="Ваш телефон" required><br>
 
             <input class="button" type="submit" name="Submit" value="Отправить" onclick="check()"><br>
-
-        </form>
+        </form> -->
 
     </div>
-
     <!-- Подложка под модальным окном -->
-
-    <div class="overlay js-overlay-modal">
-
-    </div>
-
+    <div class="overlay js-overlay-modal"></div>
     <!-- МОДАЛЬНОЕ ОКНО -->
-
 
     <hr class="footer-hr">
     <footer>Copyright © 2021
         <!-- <p>Created by ANDR.</p> -->
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- Scripts -->
 </body>
 
 </html>
