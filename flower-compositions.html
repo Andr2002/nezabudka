@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Незабудка</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="fonts/alexander.css">
     <link rel="stylesheet" href="fonts/madetheartistscript.css">
@@ -44,7 +43,7 @@
 
             <div class="busket">
                 <a href="#" class="busket-name" data-modal="1">КОРЗИНА</a>
-                <a href="#" data-modal="1"><img src="img/busket-logo.png" alt="busket-logo" class="busket-logo"></a>
+                <a href="user.html" data-modal="1"><img src="img/login.png" alt="login-logo" class="login-logo"></a>
             </div>
         </nav>
     </header>
@@ -82,7 +81,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1999 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-1">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -93,7 +92,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1599 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-2">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -104,7 +103,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1999 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-3">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -115,7 +114,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">4699 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-4">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -126,7 +125,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1699 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-5">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -137,7 +136,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1899 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-6">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -148,7 +147,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">1499 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-7">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -159,7 +158,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">2099 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-8">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -170,7 +169,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">2599 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-9">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -181,7 +180,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">2199 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-10">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -192,7 +191,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">3499 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-11">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -203,7 +202,7 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">5199 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-12">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -214,32 +213,30 @@
                 <hr class="card-hr">
                 <div class="card-desc">
                     <span class="price">2799 ₽</span>
-                    <button class="buy-btn">В корзину</button>
+                    <button class="buy-btn" data-id="fc-13">В корзину</button>
                 </div>
             </div>
             <!-- /.card -->
-
         </div>
     </div>
 
-
     <!-- МОДАЛЬНОЕ ОКНО -->
-
     <div class="modal" data-modal="1">
         <!--   Svg иконка для закрытия окна  -->
         <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
         <p class="modal__title">Раздел Корзины пока в разработке</p>
     </div>
-
     <!-- Подложка под модальным окном -->
     <div class="overlay js-overlay-modal"></div>
-
     <!-- МОДАЛЬНОЕ ОКНО -->
-
 
     <hr class="footer-hr">
     <footer>Copyright © 2021</footer>
 
+    <!-- Scripts -->
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- Scripts -->
 </body>
 
 </html>
