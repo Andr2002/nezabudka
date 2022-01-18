@@ -34,8 +34,8 @@ app.get("/select", (request, response) => {
 
 app.get("/insert", (request, response) => {
     let data = {
-        login: "l0fgfdn",
-        password: "passfdfdw0rd",
+        login: "l0fgfffdn",
+        password: "passfdfdwdrd",
         date: "CURRENT_DATE"
     }
     let sql = "INSERT INTO users(`login`, `password`, `dateOfReg`)" + `VALUES('${data.login}', '${data.password}', ${data.date})`;
