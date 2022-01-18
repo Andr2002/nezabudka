@@ -410,6 +410,12 @@ footer {
     cursor: pointer;
 }
 
+.cart-status {
+    text-align: center;
+    font-size: larger;
+    margin: 15px 0;
+}
+
 @media (max-width:768px) {
     .address,
     .time,
