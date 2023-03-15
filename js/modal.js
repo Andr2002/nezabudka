@@ -76,3 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ЭТО ДЛЯ ТОГО, ЧТОБЫ ОКНО ЗАКРЫВАЛОСЬ ПРИ НАЖАТИИ ГДЕ-ТО
 
 }); // end ready
+
+let footer = document.querySelector('footer');
+console.log(footer);
