@@ -24,6 +24,7 @@ buttons.forEach(button => {
             price: parseInt(itemPrice.textContent),
             imgSrc: card.querySelector('.card-img').getAttribute('src')
         };
+
         const itemInCart = cartWin.querySelector(`[data-id="${item.id}"]`);
         let finalPrice = 0;
         //  если товар в корзине
@@ -57,3 +58,20 @@ buttons.forEach(button => {
         });
     });
 });
+
+let modal = document.querySelector('.modal'); //  модальное окно
+let createOrder = document.querySelector('.order-final');
+let orderBtn = document.querySelector('.order-btn'); //  кнопка оформления заказа
+
+orderBtn.addEventListener('click', (event) => {
+    window.location = 'order.html';
+
+});
+
+// актуальный год
+document.querySelector('footer').innerText = `Copyright © ${new Date().getFullYear()}`;
+
+// старый код для года
+// let footer = document.querySelector('footer');
+// let year = new Date().getFullYear();
+// footer.innerText = `Copyright © ${year}`;
